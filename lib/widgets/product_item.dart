@@ -23,11 +23,11 @@ class ProductItem extends StatelessWidget {
           style: const TextStyle(color: Colors.black, fontSize: 12),
         ),
         leading: IconButton(
-          icon: const Icon(Icons.favorite),
+          icon: const Icon(Icons.favorite, color: Colors.brown),
           onPressed: () {},
         ),
         trailing: IconButton(
-          icon: const Icon(Icons.shopping_cart),
+          icon: const Icon(Icons.shopping_cart, color: Colors.brown),
           onPressed: () {},
         ),
       ),

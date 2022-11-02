@@ -15,6 +15,17 @@ class MyApp extends StatelessWidget {
       title: 'Shoopifye',
       theme: ThemeData(
         primarySwatch: Colors.brown,
+        colorScheme: ColorScheme.fromSwatch(
+          primarySwatch: Colors.brown,
+          accentColor: Colors.amber.shade100,
+        ),
+        fontFamily: "Lato",
+        appBarTheme: const AppBarTheme(
+          titleTextStyle: TextStyle(
+            fontFamily: "Arvo",
+            fontSize: 22,
+          ),
+        ),
       ),
       initialRoute: "/",
       routes: {

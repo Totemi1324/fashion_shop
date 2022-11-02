@@ -1,3 +1,4 @@
+import 'package:fashion_shop/screens/product_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class ProductItem extends StatelessWidget {
@@ -59,9 +60,12 @@ class ProductItem extends StatelessWidget {
           decoration: const BoxDecoration(
             color: Colors.white,
           ),
-          child: Image.network(
-            imageUrl,
-            fit: BoxFit.fitWidth,
+          child: GestureDetector(
+            onTap: () => Navigator.of(context).pushNamed(ProductDetailsScreen.routeName, arguments: id),
+            child: Image.network(
+              imageUrl,
+              fit: BoxFit.fitWidth,
+            ),
           ),
         ),
       ),
